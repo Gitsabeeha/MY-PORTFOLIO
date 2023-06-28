@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   
+    
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        
+       
+      } 
+      body{
+        background-color: rgb(244, 151, 244);
+      }
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+   nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+   } 
+    a{
+    text-decoration: none;
+    font-size: 150%;
+    padding: 12px;
+    color: purple
+
+   } 
+   a:hover{
+    color: red;
+   }    
+        
+    .main{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .myimg{
+      position: relative;
+      top: 80px;
+      left: 100px;
+      height: 80%;
+      
+    }  
+    .me:hover{
+      transform: translateX(-70PX);
+    }
+    .shapes{
+      transition: all 2s;
+    }
+    .shapes:hover{
+      transform: translateY(-70PX);
+    }
+      .me{
+        transition: all 2s;
+        position: absolute;
+        right: 130px;
+      } 
+
+     .social-contact{
+      margin-top: 20px;
+      color:purple;
+      padding: 12px;
+      
+      
+     }
+     .mydetail{
+      margin-left: 8%;
+      margin-top: 200px;
+      font-size: 140%;
+     }
+     .fa{
+      color:orangered;
+      margin-left: 10px;
+      font-size: 150%;
+     }
+     
+     #name{
+      margin-right:200px;
+     }
+   span{
+    color: orangered;
+   }
+   .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right:5px;
+   border: 1px solid yellow;
+   z-index: 1;
+   background-color: orangered;
+  }
+  .dropdown:hover .dropdown-content {
+    display: inline-block;
+  }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <nav class="navbar">
+      
+        <ul>
+          <h1 id="name">sabeeha rahman</h1>
+            <li li class="dropdown"> <a href="">SKILL</a> <div class="dropdown-content">
+              <a href="#">HTML5</a>
+              <a href="#">CSS3</a>
+              <a href="#">JAVASCRIPT</a>
+              <a href="#">REACT JS</a>
+              <a href="#">BOOTSTRAP</a>
+              <a href="#">UI/UX designer</a>
+              
+             
+          </div>
+            </li>
+            <li><a href="contactme.html"  target="_blank">CONTACT ME</a></li>
+            <li><a href="">PROJECT</a></li>
+
+        </ul>
+         </h3>  
+    </nav>
+   <div class="main">
+     <div class="mydetail">
+         <h1>Hi, I Am Syed Sabeeha <span>Rahman</span> </h1>
+          <p> I m graduate in Science<br> 
+             This is my official portfolio website to shows all
+        <br> project and skill in web development   
+         </p>
+         <div class="social-contact">
+          <h3> Check Me:<a href="https://www.linkedin.com/in/sabeeha-rahman-71813424a/"target='_blank' class="fa fa-linkedin"></a>      
+            <a href="https://github.com/Gitsabeeha"target='_blank' class="fa fa-github"></a> 
+          </div>
+         <a class="social-contact" href="#">Curriculum vitae</a>
+    </div>
+    <div class="myimg">
+       <img class="shapes" src="shapes.png"  height='100%'alt="">
+       <img class='me'src="me.png" height='100%' alt="">
+   </div>
+ </div>
+
+
+       
+    </div>
+</div>
+
+</body>
+</html>
